@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type = "text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"/>    
+    <link rel="stylesheet" href="stylesheet/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icon.png">
+    <script src = "javascript/script.js"></script>
+
+</head>
+<body>
+
+    <header class="container">
+        <h1>Tic-Tac-Toe</h1>
+        <span id="gamesPlayed"></span>
+        <span id="timer"> <!-- timer aspects -->
+                <span id="hours"></span>
+                <span id="minutes"></span>
+                <span id="seconds"></span>
+        </span>
+
+        <div class="controls"> <!-- sets up the choice of game modes -->
+            <h3>Player versus..</h3>
+            <input class="radioButton" type="radio" id="pVc" name="player" value="Computer" checked>Computer <!-- will start the game with the vs computer mode already checked -->
+            <input class="radioButton" type="radio" id="pVp" name="player" value="Human">Player
+        </div>
+    </header>
+
+    <main>
+        <table class="container boardContainer">
+            <tr class="row"> <!-- sets up the tiles for the first row -->
+                <td id="square1" class="tile"></td>
+                <td id="square2" class="tile"></td>
+                <td id="square3" class="tile"></td>
+            </tr>
+            
+            <tr class="row"><!-- sets up the tiles for the second row -->
+                <td id="square4" class="tile"></td>
+                <td id="square5" class="tile"></td>
+                <td id="square6" class="tile"></td>
+            </tr>
+            
+            <tr class="row"><!-- sets up the tiles for the third row -->
+                <td id="square7" class="tile"</td>
+                <td id="square8" class="tile"></td>
+                <td id="square9" class="tile"></td>
+            </tr>
+        </table>
+
+        <div id="pTurn" class="container"> <!-- welcome message -->
+            <span id="playerTurn">Welcome! Press Start/Restart to begin!</span>
+        </div>
+
+        <div class="container"> <!-- sets up start and replay button -->
+            <input type="button" class="btnCtrl" id="startBtn" value="Start/Restart">
+            <input type="button" class="btnCtrl" id="playAgainBtn" value="Play Again?" style="display: none">
+        </div>
+    </main>
+    <footer class="container">
+            <div id="instructions">
+              <p> Click Start/Restart Once To Start The Game </p>
+              <p> Once Game Has Started, Click Start Again to Start Over</p>
+	      <p> If You Wish To Switch Game Modes, Refresh the Page and Select Which Mode You Want To Play! </p>
+            </div>
+    </footer>
+
+</body>
+</html>
